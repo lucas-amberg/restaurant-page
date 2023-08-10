@@ -79,6 +79,7 @@
     background-color: var(--dark-color);
     cursor: pointer;
     color: var(--orange-color);
+    font-size: calc(1.1*min(2.5vw,1.5rem));
 }
 
 .heading-center-text {
@@ -266,6 +267,116 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.contact-container {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-bubble {
+    width: 560px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    border-radius: 20px;
+    background-color: var(--orange-color);
+    padding: 20px;
+    gap: 20px;
+}
+
+.contact-form {
+    width: 400px;
+    background-color: var(--gray-color);
+    height: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form label {
+    font-family: "Coolvetica Rg", sans-serif;
+    color: var(--light-color);
+    font-size: 1.5rem;
+    text-align: left;
+    width: 300px;
+    margin-top: 15px;
+}
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    appearance: none;
+}
+
+.contact-form input {
+    width: 300px;
+    height: 2rem;
+    border: 0;
+    border-radius: 5px;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    font-family: sans-serif;
+    padding-left: 4px;
+}
+
+.contact-form textarea {
+    resize: none;
+    width: 300px;
+    border: 0;
+    border-radius: 5px;
+    height: 200px;
+    font-family: sans-serif;
+    padding-left: 4px;
+    padding-top: 3px;
+}
+
+.contact-form button {
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    font-family: "Coolvetica Rg", sans-serif;
+    font-size: 1.5rem;
+    border:0;
+    color: var(--light-color);
+    background-color: var(--orange-color);
+    border-radius: 10px;
+}
+
+.contact-form button:hover {
+    cursor: pointer;
+    background-color: var(--dark-color);
+    color: var(--orange-color);
+    font-size: 1.6rem;
+}
+
+.info-bubble {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 20px;
+    align-items: center;
+    background-color: var(--gray-color);
+    color: var(--light-color);
+    font-family: "Coolvetica Rg";
+    border-radius: 20px;
+    gap:10px;
+}
+
+.info-bubble h3 {
+    font-size: 1.7rem;
+}
+
+.info-bubble div {
+    font-size: 1.2rem;
+}
+
+.info-bubble :nth-child(4) {
+    text-align: center;
 }
 
 
