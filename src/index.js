@@ -34,6 +34,26 @@ page.menuButton.addEventListener("click", ()=> {
     }
 })
 
+page.menuButtonMobile.addEventListener("click", ()=> {
+    if (menuPage !== true) {
+        if (homePage === true) {
+            homePage = false;
+            menuPage = true;
+            page.mainBody.innerHTML = "";
+            createMenuPage();
+        }
+        else if (contactPage === true) {
+            contactPage = false;
+            menuPage = true;
+            page.mainBody.innerHTML = "";
+            createMenuPage();
+        }
+    }
+    else {
+        return;
+    }
+})
+
 page.headingSection.addEventListener("click", ()=> {
     if (homePage !== true) {
         if (menuPage === true) {

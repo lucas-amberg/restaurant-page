@@ -67,7 +67,7 @@ function createContactPage() {
     infoTitle.textContent = "You can also reach us at:";
     phoneNumber.innerHTML = "Phone: <em>+1 (526) AMB-URGR</em>";
     emailAddress.innerHTML = "Email: <em>contactus@amburgers.com</em>";
-    address.innerHTML = "Mail all packages to:<br>945 Oakmont St<br>Los Angeles, CA<br>90009";
+    address.innerHTML = "Mail all packages to:<br>AMBURGERS Los Angeles<br>945 Oakmont St<br>Los Angeles, CA<br>90009";
 
     contactBubble.appendChild(infoBubble);
     infoBubble.appendChild(infoTitle);

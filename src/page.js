@@ -33,7 +33,13 @@ const webPage = () => {
     const contactButton = document.createElement("button");
     heading.appendChild(contactButton);
     contactButton.textContent = "CONTACT US";
-    contactButton.classList.add("contact-button");
+
+    //Create mobile menu button
+    const menuButtonMobile = document.createElement("button");
+    heading.appendChild(menuButtonMobile);
+    menuButtonMobile.textContent = "MENU";
+    contactButton.before(menuButtonMobile);
+    menuButtonMobile.classList.add("menu-button-mobile");
 
     //Create body section
     const mainBody = document.createElement("div");
@@ -67,7 +73,8 @@ const webPage = () => {
         mainBody,
         contactButton,
         menuButton,
-        headingSection
+        headingSection,
+        menuButtonMobile
     };
 };
 
