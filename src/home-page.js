@@ -49,4 +49,4 @@ function createHomePage() {
     hoursSection.appendChild(hoursFooter);
 }
 
-export default createHomePage();
+export { createHomePage };

@@ -26,7 +26,12 @@ const webPage = () => {
     heading.appendChild(menuButton);
     menuButton.textContent = "MENU";
     headingSection.before(menuButton);
-    menuButton.classList.add(".menu-button");
+    menuButton.classList.add("menu-button");
+
+    const contactButton = document.createElement("button");
+    heading.appendChild(contactButton);
+    contactButton.textContent = "CONTACT US";
+    contactButton.classList.add("contact-button");
 
     //Create body section
     const mainBody = document.createElement("div");
@@ -39,7 +44,10 @@ const webPage = () => {
     return {
         contentContainer,
         heading,
-        mainBody
+        mainBody,
+        contactButton,
+        menuButton,
+        headingSection
     };
 };
 
