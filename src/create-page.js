@@ -8,18 +8,25 @@ const webPage = () => {
     items.push(heading);
 
     //Create heading text
+    const headingSection = document.createElement("div");
+    heading.appendChild(headingSection);
     const homeHeading = document.createElement("h1");
     homeHeading.textContent = "AMBURGERS";
     homeHeading.classList.add("home-heading-text");
-    heading.appendChild(homeHeading);
+    headingSection.appendChild(homeHeading);
+    headingSection.classList.add("heading-center-text");
 
     const homeHeadingSubText = document.createElement("h2");
     homeHeadingSubText.textContent = "You like the burgers, we just make them.";
     homeHeadingSubText.classList.add("home-heading-subtext");
-    heading.appendChild(homeHeadingSubText);
+    headingSection.appendChild(homeHeadingSubText);
 
     //Create heading buttons
-    
+    const menuButton = document.createElement("button");
+    heading.appendChild(menuButton);
+    menuButton.textContent = "MENU";
+    headingSection.before(menuButton);
+    menuButton.classList.add(".menu-button");
 
     //Create body section
     const mainBody = document.createElement("div");
