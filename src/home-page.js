@@ -1,5 +1,5 @@
 import burgerImage from "./images/burger-image.jpg"
-import page from "./create-page";
+import page from "./page";
 
 function createHomePage() {
     //Create burger hero (1st hero)

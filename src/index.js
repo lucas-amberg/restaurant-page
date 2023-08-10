@@ -1,12 +1,15 @@
-import page from "./create-page"
-import {createHomePage} from "./home-page";
+import page from "./page"
+import { createHomePage } from "./home-page";
+import { createMenuPage } from "./menu-page";
 import "./style.css";
 
-let homePage = true;
-let menuPage = false;
+let homePage = false;
+let menuPage = true;
 let contactPage = false;
 
-createHomePage();
+//createHomePage();
+
+createMenuPage();
 
 page.menuButton.addEventListener("click", ()=> {
     if (menuPage !== true) {
@@ -14,13 +17,13 @@ page.menuButton.addEventListener("click", ()=> {
             homePage = false;
             menuPage = true;
             page.mainBody.innerHTML = "";
-            //createMenuPage();
+            createMenuPage();
         }
         else if (contactPage === true) {
             contactPage = false;
             menuPage = true;
             page.mainBody.innerHTML = "";
-            //createMenuPage();
+            createMenuPage();
         }
     }
     else {

@@ -27,7 +27,7 @@
 
 #content {
     display: grid;
-    grid-template-rows: 130px auto;
+    grid-template-rows: 130px auto 30px;
     grid-template-columns: 1fr;
     justify-content: center;
     justify-items: center;
@@ -39,6 +39,7 @@
 
 .burger-image {
     height: 150px;
+    border-radius: 10px;
 }
 
 .home-heading-text {
@@ -63,7 +64,7 @@
 }
 
 .heading button {
-    width: 180px;
+    width: min(14vw,180px);
     height: 80px;
     appearance: none;
     font-family: "Coolvetica Rg", sans-serif;
@@ -71,7 +72,7 @@
     color: var(--light-color);
     border: none;
     border-radius: 10px;
-    font-size: 1.5rem;
+    font-size: min(2.5vw,1.5rem);
 }
 
 .heading button:hover {
@@ -86,6 +87,8 @@
     align-items: center;
     justify-content: center;
     flex: 0;
+    padding: 10px;
+    border-radius: 10px;
     max-width: 500px;
 }
 
@@ -106,6 +109,7 @@
     align-items: center;
     overflow-y: scroll;
     width: 100vw;
+    overflow-x: hidden;
 }
 
 .burger-hero-container {
@@ -121,6 +125,7 @@
 .burger-hero-text {
     font-size: max(0.7rem, min(3vw, 2rem));
     font-family: "Coolvetica Rg", sans-serif;
+    color: var(--light-color);
 }
 
 .address-section {
@@ -140,12 +145,14 @@
     font-family: "Coolvetica Rg";
     letter-spacing: 1px;
     font-size: max(0.7rem, min(4vw, 2.5rem));
+    color: var(--light-color);
 }
 
 .address-section div{
     font-family: "Coolvetica Rg";
     text-align: center;
     font-size: min(3vw, 1.5rem);
+    color: var(--light-color);
 }
 
 .hours-section {
@@ -161,12 +168,20 @@
     height: 300px;
 }
 
-.hours-section h2,
-.hours-section h3 {
+.hours-section h2{
     font-family: "Coolvetica Rg";
     letter-spacing: 1px;
     margin: 0;
     font-size: max(0.7rem, min(4vw, 2rem));
+    color: var(--light-color);
+}
+
+.hours-section h3 {
+    font-family: "Coolvetica Rg";
+    letter-spacing: 1px;
+    margin: 0;
+    font-size: max(0.6rem, min(3.5vw, 1.7rem));
+    color: var(--light-color);
 }
 
 .hours-section div {
@@ -174,7 +189,85 @@
     font-family: "Coolvetica Rg";
     letter-spacing: 1px;
     font-size: max(0.7rem, min(12vw, 6rem));
+    color: var(--light-color);
 }
+
+.heading-center-text:hover {
+    background-color: var(--dark-color);
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menu-item img{
+    width: 250px;
+    border-radius: 10px;
+}
+
+.menu-item {
+    display: flex;
+    width: 500px;
+    background-color: var(--orange-color);
+    padding: 15px;
+    border-radius: 10px;
+    justify-content: space-around;
+    gap: 15px;
+    height: 207px;
+}
+
+.item-description-container {
+    font-family: "Coolvetica Rg", sans-serif;
+    color: var(--light-color);
+}
+
+.item-description-container h3 {
+    font-size: 1.5rem;
+}
+
+.item-description-container div>em {
+    font-size: 0.8rem;
+    margin-top: 20px;
+    display: block;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    width: 100vw;
+    gap: 20px;
+    justify-items: center;
+}
+
+.menu-disclaimer {
+    text-align: center;
+    color: var(--light-color);
+}
+
+.copyright-footer {
+    background-color: var(--orange-color);
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.copyright-text {
+    font-family: "Coolvetica Rg", sans-serif;
+    color: var(--dark-color);
+    text-decoration: none;
+}
+
+.copyright-footer a img {
+    height: 25px;
+}
+
+.copyright-footer a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 @media (max-width: 600px) {
     .heading button {
@@ -191,5 +284,29 @@
     }
     #content {
         grid-template-rows: 80px auto;
+    }
+    .menu-container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .menu-item {
+        width: 300px;
+        height: 140px;
+        padding: 7px;
+        border-radius: 5px;
+        gap: 8px;
+    }
+    .item-description-container h3 {
+        font-size: 1.2rem;
+    }
+    .item-description-container div {
+        font-size: 1rem;
+    }
+    .item-description-container div>em {
+        font-size: 0.5rem;
+        margin-top: 5px;
+    }
+    .menu-item img{
+        width: 125px;
+        border-radius: 10px;
     }
 }
