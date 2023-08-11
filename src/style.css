@@ -251,6 +251,7 @@
     align-items: center;
     justify-content: center;
     gap: 5px;
+    box-shadow: 0px 0px 0px -10px black;
 }
 
 .copyright-text {
@@ -390,16 +391,21 @@
         height: 80px;
     }
     .heading button {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
+        height: 30px;
+        width: 90px;
     }
     .heading button:hover {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
     .menu-button {
         display: none;
     }
     .menu-button-mobile {
         display: block;
+    }
+    .heading-center-text {
+        width: 300px;
     }
     .home-heading-text {
         font-size: 2rem;
@@ -435,13 +441,33 @@
         border-radius: 10px;
     }
     .contact-bubble {
-        width: 350px;
-        height: 85vh;
+        width: 300px;
+        height: 800px;
     }
     .contact-form {
-        width: 300px;
+        width: 260px;
     }
     .info-bubble {
-        width: 300px;
+        width: 260px;
+        text-align: center;
+    }
+    .info-bubble div {
+        font-size: 1rem;
+    }
+    .info-bubble h3 {
+        font-size: 1.4rem;
+    }
+    .contact-form label,
+    .contact-form input,
+    .contact-form textarea {
+        width: 240px;
+    }
+    .menu-and-contact {
+        display: flex;
+        flex-direction: row;
+        height: 40px;
+        width: 100vw;
+        align-items: center;
+        justify-content: space-evenly;
     }
 }

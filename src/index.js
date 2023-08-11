@@ -4,15 +4,11 @@ import { createMenuPage } from "./menu-page";
 import { createContactPage } from "./contact-page";
 import "./style.css";
 
-let homePage = false;
+let homePage = true;
 let menuPage = false;
-let contactPage = true;
+let contactPage = false;
 
-//createHomePage();
-
-//createMenuPage();
-
-createContactPage();
+createHomePage();
 
 page.menuButton.addEventListener("click", ()=> {
     if (menuPage !== true) {

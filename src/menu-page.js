@@ -59,7 +59,7 @@ function createMenuPage() {
         "House Tenders",
         "$9.25",
         "For the kids, or adults who never grew up.",
-        "Five piece chicken tender, served with AMBURGER fries.")
+        "Five piece chicken tender, served with pickles and AMBURGER fries.")
     createNewMenuElement(houseTenders);
 
     const amburgerFries = new MenuItem(amburgerFriesImage,

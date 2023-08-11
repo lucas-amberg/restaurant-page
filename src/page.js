@@ -30,12 +30,17 @@ const webPage = () => {
     headingSection.before(menuButton);
     menuButton.classList.add("menu-button");
 
+    const menuAndContactContainer = document.createElement("div");
+    menuAndContactContainer.classList.add("menu-and-contact");
+    heading.appendChild(menuAndContactContainer);
+
     const contactButton = document.createElement("button");
-    heading.appendChild(contactButton);
+    menuAndContactContainer.appendChild(contactButton);
     contactButton.textContent = "CONTACT US";
 
     //Create mobile menu button
     const menuButtonMobile = document.createElement("button");
+    menuAndContactContainer.appendChild(menuButtonMobile);
     heading.appendChild(menuButtonMobile);
     menuButtonMobile.textContent = "MENU";
     contactButton.before(menuButtonMobile);
