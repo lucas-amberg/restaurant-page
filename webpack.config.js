@@ -1,4 +1,5 @@
 const path = require('path');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -8,6 +9,9 @@ module.exports = {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
   },
+  plugins: [
+    new UglifyJsPlugin()
+  ],
   module: {
     rules: [
         {
@@ -22,6 +26,13 @@ module.exports = {
             test: /\.(woff|woff2|eot|ttf|otf)$/i,
             type: 'asset/resource',
         },
+    ],
+  },
+  optimization: {
+    minimizer: [
+      new UglifyJsPlugin({
+        cache: true,
+      }),
     ],
   },
 };
