@@ -4,6 +4,15 @@ import { createMenuPage } from "./menu-page";
 import { createContactPage } from "./contact-page";
 import "./style.css";
 
+import burgerFavicon from "./images/char_broiled-cheeseburger.svg";
+
+//Create favicon
+const favicon = document.createElement("link");
+favicon.setAttribute("href", burgerFavicon);
+favicon.setAttribute("rel", "shortcut icon");
+document.getElementsByTagName("head")[0].appendChild(favicon);
+
+
 let homePage = true;
 let menuPage = false;
 let contactPage = false;
